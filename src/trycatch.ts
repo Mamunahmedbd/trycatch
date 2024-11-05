@@ -37,7 +37,7 @@ export async function catchErrorTyped<
       return [error as UnionToIntersection<InstanceType<E>>, undefined];
     }
 
-    throw error; // Re-throw if not in errorsToCatch
+    throw error;
   }
 }
 
